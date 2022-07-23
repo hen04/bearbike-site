@@ -15,24 +15,24 @@ html(lang="ru")
     body
         header
             .header-logo
-                img(src="./images/header-logo.svg" alt="Bearbike" width="202" height="52")
             nav
                 ul
                     each item in menu
                         li
                             a(href= item.url)= item.title
+            .menu-btn
         main
             block content
 
         footer
             .wrapper
-                .footer-logo
-                    img(src="./images/footer-logo.svg" alt="Bearbike" width="108" height="94")
                 nav.footer-menu
                     ul
                         each item in menuFooter
                             li
                                 a(href="#")= item.title
+                .footer-logo
+                    img(src="./images/footer-logo.svg" alt="Bearbike" width="108" height="94")
                 .footer-social
                     ul
                         each item in footerSocial

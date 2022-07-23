@@ -1,0 +1,66 @@
+.about-mission {
+  background-color: $gray-98;
+  padding: 40px 0;
+
+  @include responsive(portrait) {
+    padding: 56px 0;
+  }
+
+  @include responsive(landscapedesktop) {
+    padding: 72px 0;
+  }
+
+  img {
+    width: 100%;
+    max-width: 505px;
+    height: auto;
+
+    @include responsive(mobile) {
+      margin-bottom: 24px;
+    }
+
+    @include responsive(portrait) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__content {
+
+    @include responsive(device) {
+      max-width: 462px;
+      margin: 0 auto;
+    }
+
+    @include responsive(landscapedesktop) {
+      display: flex;
+    }
+  }
+
+  &__info {
+    @include responsive(landscapedesktop) {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+
+    @include responsive(desktop) {
+      max-width: 460px;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    p {
+      margin: 0 0 16px;
+    }
+  }
+}
+
+.about-mission-link {
+  border: 1px solid $gray-8;
+  text-decoration: none;
+  color: $gray-8;
+  padding: 16px 40px;
+  display: inline-block;
+
+}
