@@ -343,6 +343,7 @@ body {
   flex-flow: column;
   min-height: 100vh;
   background-color: #ffffff;
+  color: #525252;
   font: normal 16px/1.35 "Inter", sans-serif;
 }
 
@@ -433,5 +434,30 @@ footer .wrapper {
   min-width: 32px;
   min-height: 32px;
   margin-left: 12px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 500;
+  color: #141414;
+}
+
+.main-info__content {
+  display: flex;
+}
+.main-info__descr {
+  margin-left: 124px;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.main-info__descr p {
+  font-size: 20px;
+  margin: 0 0 26px;
+}
+.main-info__descr .price {
+  font-size: 40px;
+  color: #141414;
 }
 /*# sourceMappingURL=maps/main-style.css.map */

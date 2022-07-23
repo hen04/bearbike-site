@@ -1,0 +1,22 @@
+.main-info {
+  &__content {
+    display: flex;
+  }
+
+  &__descr {
+    margin-left: 124px;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+    p {
+      font-size: 20px;
+      margin: 0 0 26px;
+    }
+
+    .price {
+      font-size: 40px;
+      color: $gray-8;
+    }
+  }
+}
