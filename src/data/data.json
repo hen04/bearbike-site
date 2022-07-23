@@ -1,0 +1,52 @@
+{
+  "menu": [
+    {
+      "url": "#about",
+      "title": "Описание"
+    },
+    {
+      "url": "#details",
+      "title": "Детали"
+    },
+    {
+      "url": "#characteristic",
+      "title": "Характеристики"
+    },
+    {
+      "url": "#history",
+      "title": "История бренда"
+    },
+    {
+      "url": "#accessories",
+      "title": "Аксессуары"
+    }
+  ],
+  "menuFooter": [
+    {
+      "title": "О компании"
+    },
+    {
+      "title": "История"
+    },
+    {
+      "title": "Как собрать велосипед"
+    },
+    {
+      "title": "Магазины"
+    }
+  ],
+  "footerSocial": [
+    {
+      "icon": "../images/ic-instagram.svg"
+    },
+    {
+      "icon": "../images/ic-vkontakte.svg"
+    },
+    {
+      "icon": "../images/ic-facebook.svg"
+    },
+    {
+      "icon": "../images/ic-youtube.svg"
+    }
+  ]
+}
