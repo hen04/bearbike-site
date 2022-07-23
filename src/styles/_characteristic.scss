@@ -1,0 +1,11 @@
+.characteristic {
+  padding: 40px 0;
+
+  @include responsive(portrait) {
+    padding: 56px 0;
+  }
+
+  @include responsive(landscapedesktop) {
+    padding: 72px 0;
+  }
+}
