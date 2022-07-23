@@ -37,16 +37,16 @@
   ],
   "footerSocial": [
     {
-      "icon": "../images/ic-instagram.svg"
+      "icon": "./images/ic-instagram.svg"
     },
     {
-      "icon": "../images/ic-vkontakte.svg"
+      "icon": "./images/ic-vkontakte.svg"
     },
     {
-      "icon": "../images/ic-facebook.svg"
+      "icon": "./images/ic-facebook.svg"
     },
     {
-      "icon": "../images/ic-youtube.svg"
+      "icon": "./images/ic-youtube.svg"
     }
   ]
 }
