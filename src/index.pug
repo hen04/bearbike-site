@@ -2,7 +2,7 @@ extends templates/layout
 
 block content
 	.wrapper
-		.main-info
+		#about.main-info
 			h1 Велосипед Las&nbsp;Vegas&nbsp;4.0 от&nbsp;BearBike
 			.main-info__content
 				img(src="./images/las-vegas.png" alt="Bearbike Las Vegas" width="272" height="170")
@@ -18,7 +18,7 @@ block content
 				p Сменить режим просто — достаточно переставить заднее колесо. При фиксированной передаче колеса будут вращаться вместе с педалями. Каждый выбирает сам в каком режиме двигаться.
 				p Колеса 28 дюймов делают велосипед быстрым и маневренным, а высококачественная втулка Novatec обеспечивает хороший накат.
 
-			.main-info__details
+			#details.main-info__details
 				h2 Детали велосипеда
 				.main-info__details-list
 					each item in details
@@ -34,7 +34,7 @@ block content
 				p BearBike — это бренд, сочетающий в себе индивидуальность и надежность, тонкое чувства юмора и уверенность. Мы делаем отличные и доступные городские велосипеды для Людей. Ярких и целеустремленных, ценящих комфорт, смелых и свободных.
 
 	.wrapper
-		.characteristic
+		#characteristic.characteristic
 			h2 Характеристики
 			.table
 				each item in table
@@ -42,7 +42,7 @@ block content
 						each subitem in item.row
 							.table__col= subitem.col
 
-	.about-mission
+	#history.about-mission
 		.wrapper
 			.about-mission__content
 				img(src="./images/bearbike-mission.jpg" alt="Миссия BearBike" width="270" height="280")
@@ -53,7 +53,7 @@ block content
 					a(href="#" class="about-mission-link") Подробнее
 
 	.wrapper
-		.accessories
+		#accessories.accessories
 			h3 Аксессуары
 			.accessories__list
 				each item in accessories
