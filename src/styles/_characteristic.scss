@@ -9,3 +9,47 @@
     padding: 72px 0;
   }
 }
+
+.table {
+  &__row {
+    display: flex;
+    
+    @include responsive(mobile) {
+      flex-flow: wrap;
+      padding: 16px 24px;
+      margin: 0 -24px;
+    }
+    
+    @include responsive(portraitdesktop) {
+      padding: 16px 8px;
+    }
+    
+    &:nth-child(odd) {
+      background-color: $gray-98;
+    }
+  }
+  
+  &__col {
+    &:first-child {
+      @include responsive(mobile) {
+        width: 100%;
+        padding-bottom: 8px;
+      }
+      
+      @include responsive(portraitdesktop) {
+        width: 60%;
+        padding-right: 16px;
+        box-sizing: border-box;
+      }
+    }
+    @include responsive(mobile) {
+      width: 33.33334%;
+    }
+    
+    @include responsive(portraitdesktop) {
+      width: 20%;
+      padding: 0 8px;
+      box-sizing: border-box;
+    }
+  }
+}

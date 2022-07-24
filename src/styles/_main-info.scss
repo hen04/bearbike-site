@@ -17,6 +17,7 @@
     img {
       width: 100%;
       height: auto;
+      min-height: 170px;
 
       @include responsive(mobile) {
         margin: 24px 0;
@@ -76,6 +77,7 @@
     .price {
       color: $gray-8;
       font-size: 24px;
+      font-weight: 500;
 
       @include responsive(portrait) {
         margin-bottom: 26px;
@@ -125,7 +127,7 @@
     img {
       width: 100%;
       height: auto;
-      min-height: 288px;
+      min-height: 315px;
       background-color: #383838;
       object-fit: cover;
     }

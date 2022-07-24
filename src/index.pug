@@ -36,6 +36,11 @@ block content
 	.wrapper
 		.characteristic
 			h2 Характеристики
+			.table
+				each item in table
+					.table__row
+						each subitem in item.row
+							.table__col= subitem.col
 
 	.about-mission
 		.wrapper
@@ -50,3 +55,9 @@ block content
 	.wrapper
 		.accessories
 			h3 Аксессуары
+			.accessories__list
+				each item in accessories
+					.accessories__item
+						img(src= item.image alt=item.title width="240" height="240")
+						p= item.title
+						p.price= item.price
