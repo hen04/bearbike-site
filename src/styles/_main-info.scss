@@ -1,4 +1,8 @@
 .main-info {
+  @include responsive(landscapedesktop) {
+    margin-top: 32px;
+  }
+
   &__content {
     display: flex;
 
@@ -110,15 +114,35 @@
 
     @include responsive(landscapedesktop) {
       columns: 2;
+      margin-top: 72px;
+      column-gap: 20px;
     }
 
     p {
       margin: 0 0 16px;
+      font-size: 18px;
+      
+      @include responsive(portrait) {
+        font-weight: 19;
+      }
+      
+      @include responsive(landscapedesktop) {
+        font-size: 20px;
+        line-height: 1.5;
+      }
     }
   }
 
   &__details {
     margin-top: 40px;
+    
+    @include responsive(portrait) {
+      margin-top: 72px;
+    }
+    
+    @include responsive(landscapedesktop) {
+      margin-top: 88px;
+    }
 
     h2 {
       width: 100%;
@@ -126,8 +150,7 @@
 
     img {
       width: 100%;
-      height: auto;
-      min-height: 315px;
+      height: 285px;
       background-color: #383838;
       object-fit: cover;
     }
@@ -142,7 +165,6 @@
     @include responsive(landscapedesktop) {
       display: flex;
     }
-
   }
 
   &__details-item {

@@ -15,12 +15,19 @@ html(lang="ru")
     body
         header
             .header-logo
-            nav
-                ul
-                    each item in menu
-                        li
-                            a(href= item.url)= item.title
-            .menu-btn
+            .header-menu
+                nav
+                    ul
+                        each item in menu
+                            li
+                                a(href= item.url)= item.title
+                .header-social
+                    ul
+                        each item in footerSocial
+                            li
+                                a(href="#")
+                                    img(src= item.icon alt="" width="20" height="20")
+            .menu-btn.js-menu-btn
         main
             block content
 

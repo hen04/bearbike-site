@@ -15,20 +15,30 @@
   <body>
     <header>
       <div class="header-logo"></div>
-      <nav>
-        <ul>
-          <li><a href="#about">Описание</a></li>
-          <li><a href="#details">Детали</a></li>
-          <li><a href="#characteristic">Характеристики</a></li>
-          <li><a href="#history">История бренда</a></li>
-          <li><a href="#accessories">Аксессуары</a></li>
-        </ul>
-      </nav>
-      <div class="menu-btn"></div>
+      <div class="header-menu">
+        <nav>
+          <ul>
+            <li><a href="#about">Описание</a></li>
+            <li><a href="#details">Детали</a></li>
+            <li><a href="#characteristic">Характеристики</a></li>
+            <li><a href="#history">История бренда</a></li>
+            <li><a href="#accessories">Аксессуары</a></li>
+          </ul>
+        </nav>
+        <div class="header-social">
+          <ul>
+            <li><a href="#"><img src="./images/ic-instagram.svg" alt="" width="20" height="20"></a></li>
+            <li><a href="#"><img src="./images/ic-vkontakte.svg" alt="" width="20" height="20"></a></li>
+            <li><a href="#"><img src="./images/ic-facebook.svg" alt="" width="20" height="20"></a></li>
+            <li><a href="#"><img src="./images/ic-youtube.svg" alt="" width="20" height="20"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-btn js-menu-btn"></div>
     </header>
     <main>
       <div class="wrapper">
-        <div class="main-info">
+        <div class="main-info" id="about">
           <h1>Велосипед Las&nbsp;Vegas&nbsp;4.0 от&nbsp;BearBike</h1>
           <div class="main-info__content"><img src="./images/las-vegas.png" alt="Bearbike Las Vegas" width="272" height="170">
             <div class="main-info__descr">
@@ -45,7 +55,7 @@
             <p>Сменить режим просто — достаточно переставить заднее колесо. При фиксированной передаче колеса будут вращаться вместе с педалями. Каждый выбирает сам в каком режиме двигаться.</p>
             <p>Колеса 28 дюймов делают велосипед быстрым и маневренным, а высококачественная втулка Novatec обеспечивает хороший накат.</p>
           </div>
-          <div class="main-info__details">
+          <div class="main-info__details" id="details">
             <h2>Детали велосипеда</h2>
             <div class="main-info__details-list">
               <div class="main-info__details-item"><img src="./images/las-vegas-1.png" alt="Рама" width="272" height="288">
@@ -72,7 +82,7 @@
         </div>
       </div>
       <div class="wrapper">
-        <div class="characteristic">
+        <div class="characteristic" id="characteristic">
           <h2>Характеристики</h2>
           <div class="table">
             <div class="table__row">
@@ -120,7 +130,7 @@
           </div>
         </div>
       </div>
-      <div class="about-mission">
+      <div class="about-mission" id="history">
         <div class="wrapper">
           <div class="about-mission__content"><img src="./images/bearbike-mission.jpg" alt="Миссия BearBike" width="270" height="280">
             <div class="about-mission__info">
@@ -132,7 +142,7 @@
         </div>
       </div>
       <div class="wrapper">
-        <div class="accessories">
+        <div class="accessories" id="accessories">
           <h3>Аксессуары</h3>
           <div class="accessories__list">
             <div class="accessories__item"><img src="./images/accessories-1.png" alt="Насос с манометром, KLONK, 10714" width="240" height="240">

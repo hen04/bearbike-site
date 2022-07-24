@@ -5,10 +5,84 @@ body {
   background-color: #ffffff;
   color: $gray-32;
   font: normal 16px/1.35 "Inter", sans-serif;
+  
+  &.menu-opened {
+    .menu-btn {
+      @include responsive(mobile) {
+        background: #fff url(../images/menu-close.svg) 0 0 no-repeat;
+      }
+    }
+    
+    .header-menu {
+      @include responsive(mobile) {
+        position: absolute;
+        top: 60px;
+        bottom: 0;
+        background-color: #ffffff;
+        width: 100%;
+        left: 0;
+        display: flex;
+        flex-flow: column;
+      }
+      
+      nav {
+        @include responsive(mobile) {
+          width: 100%;
+        }
+  
+        a {
+          @include responsive(mobile) {
+            padding: 16px 24px;
+          }
+        }
+  
+      }
+      ul {
+        @include responsive(mobile) {
+          display: flex;
+        }
+      }
+      
+    }
+    
+    .header-social {
+      display: flex;
+    }
+  }
+}
+
+.header-social {
+  display: none;
+
+  @include responsive(mobile) {
+    margin-top: auto;
+  }
+  
+  ul {
+    @include responsive(mobile) {
+      display: flex;
+      flex-flow: wrap;
+    }
+  }
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: $yellow;
+    min-width: 32px;
+    min-height: 32px;
+    margin-left: 12px;
+    
+    @include responsive(mobile) {
+      margin-bottom: 24px;
+      padding: 0;
+    }
+  }
 }
 
 .wrapper {
-  max-width: 1240px;
+  max-width: 1320px;
   width: 100%;
   margin: 0 auto;
   padding: 0 40px;
@@ -38,7 +112,7 @@ header {
   }
 
   @include responsive(landscapedesktop) {
-    max-width: 1240px;
+    max-width: 1320px;
     padding: 40px;
     margin: 0 auto;
   }
@@ -72,9 +146,10 @@ header {
     padding: 8px 16px;
     text-decoration: none;
     display: block;
-
+  
     @include responsive(desktop) {
       font-size: 20px;
+      padding: 8px 20px;
     }
   }
 }
@@ -95,7 +170,7 @@ header {
   }
 
   @include responsive(landscapedesktop) {
-    margin-right: 56px;
+    margin-right: 54px;
     width: 202px;
     height: 52px;
     background: #fff url(../images/header-logo.svg) 0 0 no-repeat;
@@ -157,9 +232,13 @@ footer {
     width: 100%;
   }
 
-  @include responsive(portraitdesktop) {
+  @include responsive(portrait) {
     order: 2;
     margin-left: 48px;
+  }
+  
+  @include responsive(landscapedesktop) {
+    order: 2;
   }
 
   a {
@@ -260,6 +339,7 @@ h2 {
 
   @include responsive(landscapedesktop) {
     font-size: 40px;
+    margin-bottom: 40px;
   }
 }
 
