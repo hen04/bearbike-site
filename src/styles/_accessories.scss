@@ -8,4 +8,69 @@
   @include responsive(landscapedesktop) {
     padding: 72px 0;
   }
+  
+  &__list {
+    display: flex;
+    
+    @include responsive(mobile) {
+      flex-flow: column;
+    }
+    
+    @include responsive(portrait) {
+      flex-flow: wrap;
+    }
+    
+    @include responsive(landscapedesktop) {
+      flex-flow: row;
+    }
+  }
+  
+  &__item {
+    &:not(:first-child) {
+      @include responsive(mobile) {
+        margin-top: 20px;
+      }
+    }
+    
+    &:nth-child(1),
+    &:nth-child(2) {
+      @include responsive(portrait) {
+        margin-bottom: 20px;
+      }
+    }
+    
+    @include responsive(portrait) {
+      width: calc(50% - 10px);
+    }
+    
+    &:nth-child(odd) {
+      @include responsive(portrait) {
+        margin-right: 20px;
+      }
+    }
+
+    @include responsive(landscapedesktop) {
+      width: 25%;
+
+      &:not(:first-child) {
+        margin-left: 20px;
+      }
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  .price {
+    font-size: 20px;
+    color: $gray-8;
+    font-weight: 500;
+    margin-top: 8px;
+  }
+  
+  p {
+    margin: 16px 0 0;
+  }
 }
