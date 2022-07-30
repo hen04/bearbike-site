@@ -99,6 +99,15 @@
       border: 0;
       color: $gray-8;
       cursor: pointer;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: $yellow-hover;
+      }
+      &:focus,
+      &:active {
+        background-color: $yellow-focus;
+      }
     }
   }
 
@@ -121,11 +130,11 @@
     p {
       margin: 0 0 16px;
       font-size: 18px;
-      
+
       @include responsive(portrait) {
         font-weight: 19;
       }
-      
+
       @include responsive(landscapedesktop) {
         font-size: 20px;
         line-height: 1.5;
@@ -135,11 +144,11 @@
 
   &__details {
     margin-top: 40px;
-    
+
     @include responsive(portrait) {
       margin-top: 72px;
     }
-    
+
     @include responsive(landscapedesktop) {
       margin-top: 88px;
     }

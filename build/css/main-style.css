@@ -383,8 +383,11 @@ body {
     display: flex;
   }
 }
-body.menu-opened .header-social {
-  display: flex;
+@media only screen and (max-width: 767px) {
+  body.menu-opened .header-social {
+    /* < 767 */
+    display: flex;
+  }
 }
 
 .header-social {
@@ -484,9 +487,12 @@ header li {
 header li a {
   transition: all 0.3s ease-in-out;
 }
-header li a:hover {
+header li a:hover, header li a:focus, header li a:active {
   background-color: #141414;
   color: #FFD101;
+}
+header li a:focus, header li a:active {
+  outline: none;
 }
 header a {
   color: #525252;
@@ -536,6 +542,12 @@ header a {
     width: 24px;
     height: 24px;
     background: #fff url(../images/menu.svg) 0 0 no-repeat;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .menu-btn {
+    /* > 768 */
+    display: none;
   }
 }
 
@@ -879,6 +891,13 @@ h4 {
   border: 0;
   color: #141414;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.main-info__descr button:hover {
+  background-color: #FFBB01;
+}
+.main-info__descr button:focus, .main-info__descr button:active {
+  background-color: #FFE101;
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .main-info__price-btn {
@@ -1192,6 +1211,13 @@ h4 {
   color: #141414;
   padding: 16px 40px;
   display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+.about-mission-link:hover {
+  background-color: #FFBB01;
+}
+.about-mission-link:focus, .about-mission-link:active {
+  background-color: #FFE101;
 }
 
 .accessories {

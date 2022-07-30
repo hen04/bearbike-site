@@ -19,7 +19,9 @@ window.onload = function () {
 				block: 'start'
 			});
 
-			page.classList.toggle('menu-opened');
+			if (page.classList.contains('menu-opened')) {
+				page.classList.toggle('menu-opened');
+			}
 		});
 	}
 

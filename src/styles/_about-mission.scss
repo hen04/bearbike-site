@@ -62,5 +62,13 @@
   color: $gray-8;
   padding: 16px 40px;
   display: inline-block;
+  transition: all 0.3s ease-in-out;
 
+  &:hover {
+    background-color: $yellow-hover;
+  }
+  &:focus,
+  &:active {
+    background-color: $yellow-focus;
+  }
 }
