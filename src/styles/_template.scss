@@ -259,6 +259,18 @@ footer {
     padding: 8px 16px;
     text-decoration: none;
     display: block;
+
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: underline;
+    }
+
+    &:focus,
+    &:active {
+      outline: none;
+    }
+
   }
 
   ul {
@@ -314,6 +326,17 @@ footer {
     min-width: 32px;
     min-height: 32px;
     margin-left: 12px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: $yellow-hover;
+    }
+
+    &:focus,
+    &:active {
+      background-color: $yellow-focus;
+      outline: none;
+    }
 
     @include responsive(mobile) {
       margin-bottom: 12px;
