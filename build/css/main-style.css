@@ -621,6 +621,12 @@ footer .wrapper {
   text-decoration: none;
   display: block;
 }
+.footer-menu a:hover, .footer-menu a:focus, .footer-menu a:active {
+  text-decoration: underline;
+}
+.footer-menu a:focus, .footer-menu a:active {
+  outline: none;
+}
 @media only screen and (max-width: 767px) {
   .footer-menu ul {
     /* < 767 */
@@ -679,6 +685,14 @@ footer .wrapper {
   min-width: 32px;
   min-height: 32px;
   margin-left: 12px;
+  transition: all 0.3s ease-in-out;
+}
+.footer-social a:hover {
+  background-color: #FFBB01;
+}
+.footer-social a:focus, .footer-social a:active {
+  background-color: #FFE101;
+  outline: none;
 }
 @media only screen and (max-width: 767px) {
   .footer-social a {
@@ -898,6 +912,7 @@ h4 {
 }
 .main-info__descr button:focus, .main-info__descr button:active {
   background-color: #FFE101;
+  outline: none;
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .main-info__price-btn {
@@ -1218,6 +1233,7 @@ h4 {
 }
 .about-mission-link:focus, .about-mission-link:active {
   background-color: #FFE101;
+  outline: none;
 }
 
 .accessories {

@@ -70,5 +70,6 @@
   &:focus,
   &:active {
     background-color: $yellow-focus;
+    outline: none;
   }
 }
