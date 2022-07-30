@@ -5,14 +5,14 @@ body {
   background-color: #ffffff;
   color: $gray-32;
   font: normal 16px/1.35 "Inter", sans-serif;
-  
+
   &.menu-opened {
     .menu-btn {
       @include responsive(mobile) {
         background: #fff url(../images/menu-close.svg) 0 0 no-repeat;
       }
     }
-    
+
     .header-menu {
       @include responsive(mobile) {
         position: absolute;
@@ -24,29 +24,31 @@ body {
         display: flex;
         flex-flow: column;
       }
-      
+
       nav {
         @include responsive(mobile) {
           width: 100%;
         }
-  
+
         a {
           @include responsive(mobile) {
             padding: 16px 24px;
           }
         }
-  
+
       }
       ul {
         @include responsive(mobile) {
           display: flex;
         }
       }
-      
+
     }
-    
+
     .header-social {
-      display: flex;
+      @include responsive(mobile) {
+        display: flex;
+      }
     }
   }
 }
@@ -57,7 +59,7 @@ body {
   @include responsive(mobile) {
     margin-top: auto;
   }
-  
+
   ul {
     @include responsive(mobile) {
       display: flex;
@@ -73,7 +75,7 @@ body {
     min-width: 32px;
     min-height: 32px;
     margin-left: 12px;
-    
+
     @include responsive(mobile) {
       margin-bottom: 24px;
       padding: 0;
@@ -134,9 +136,16 @@ header {
 
     a {
       transition: all 0.3s ease-in-out;
-      &:hover {
+      &:hover,
+      &:focus,
+      &:active {
         background-color: $gray-8;
         color: $yellow;
+      }
+
+      &:focus,
+      &:active {
+        outline: none;
       }
     }
   }
@@ -146,7 +155,7 @@ header {
     padding: 8px 16px;
     text-decoration: none;
     display: block;
-  
+
     @include responsive(desktop) {
       font-size: 20px;
       padding: 8px 20px;
@@ -183,6 +192,10 @@ header {
     width: 24px;
     height: 24px;
     background: #fff url(../images/menu.svg) 0 0 no-repeat;
+  }
+
+  @include responsive(portraitdesktop) {
+    display: none;
   }
 }
 
@@ -236,7 +249,7 @@ footer {
     order: 2;
     margin-left: 48px;
   }
-  
+
   @include responsive(landscapedesktop) {
     order: 2;
   }
